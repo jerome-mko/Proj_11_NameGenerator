@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <!-- Site Title -->
+        <title>BABY NAME GENERATOR</title>
+
+        <!-- CSS & JS -->
+        <link rel="stylesheet" href="src/styles.css">
+        <script src="src/index.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- main container -->
+        <div id="main">
+            <div class="container">
+                <div class="container-hero">
+                    <h1 id="hero-heading-el"><a href="index.html"><span class="special-char">Lil'</span> Labels</a></h1>
+                    <h3 id="hero-subheading-el">Delivering lil' names in less than 9 months.</h3>
+                    <div class="gender__picker">
+                        <!-- <label>
+                            Boy Names:
+                            <input class="hero__checkbox" id="boy-checkbox-el" type="checkbox" name="gender" onchange="">
+                            <span class="custom__checkbox"></span>
+                        </label> -->
+                        <label>
+                            <span id="label-boys-el" class="label-dec">Boy Names</span>
+                            <input class="hero__checkbox" id="girl-checkbox-el" type="checkbox" name="gender" onchange="">
+                            <span class="custom__checkbox"></span>
+                            <span id="label-girls-el" class="label-dec">Girl Names</span>
+                        </label>
+                    </div>
+                    <div class="hero__name-box">
+                        <p id="name-el"></p>
+                    </div>
+                    <div class="hero__cta-btns">
+                        <button id="generate-el" class="cta-btns" onclick="enRenderName()">Generate Name</button>
+                        <button id="copy-el" class="cta-btns-alt">Copy to Clipboard</button>
+                    </div>
+                    <div class="language-picker">
+                        <button class="language__btn" onclick="enLanguage()"><p class="active-language" id="language__english">English</p></button> | 
+                        <button class="language__btn" onclick="jpLanguage()"><p id="language__japanese">日本語</p></button>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img id="baby-img" src="images/baby-illust.png" alt="An illustration of a baby girl in a cute one piece dress. She is looking at the picture on her clothes and smiling.">
+                 </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,224 @@
+/* MAIN ELEMENTS */
+@font-face {
+    font-family: Japanese Font;
+    src: url("../font/JapaneseFont2.ttf");
+}
+
+@font-face {
+    font-family: Japanese Font2;
+    src: url("../font/JapaneseFont3.ttf");
+}
+
+body {
+    background-color: #1b2021;
+    margin: 0;
+    padding: 0;
+    color: #F5F0F6;
+    text-align: center;
+    font-family: "League Spartan", "Japanese Font", "Japanese Font2", "Roboto", sans-serif;
+    overflow: hidden;
+    font-weight: lighter;
+}
+.japanese-text {
+    font-family: "Japanese Font2";
+}
+
+.english-text {
+    font-family: "League Spartan", "Roboto", sans-serif;
+}
+
+h3 {
+    font-weight: 300;
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #F5F0F6;
+}
+
+h1 {
+    font-size: 80px;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: "League Spartan", "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+#main {
+    border: 1px dotted blue transparent;
+    padding: 10px;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px dotted red transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+.container-hero {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1b2021;
+    border: 1px dotted yellow transparent;
+    width: 70%;
+}
+
+.language-picker {
+    font-size: 12px;
+}
+
+
+
+#baby-img {
+    border: 1px dotted yellow transparent;
+    width: 230px;
+}
+
+.gender__picker {
+    padding: 20px ;
+    margin: 0 0 10px 0;
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.hero__checkbox {
+    -webkit-appearance: none;
+    position: relative;
+    width: 30px;
+    height: 10px;
+    border-radius: 25px;
+    background-color: #2B93DD;
+    transition: background .3s;
+    outline: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.hero__checkbox::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 1.1rem;
+    width: 1.1rem;
+    background-color: #F5F0F6;
+    transition: left .3s;
+}
+
+.hero__checkbox:checked  {
+    background-color: #E56399; /* green when checked */
+    border-color: #F5F0F6;
+}
+
+.label-dec {
+    color: #FFCA3A;
+}
+
+.hero__checkbox:checked::after  {
+   left: 70%;
+}
+
+/* .custom__checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #18343f40;
+    border: 1px solid #F5F0F6;
+    display: inline-block;
+    vertical-align: middle;
+    flex-direction: row;
+    margin-left: 5px;
+    flex-direction: row;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+} */
+
+.hero__name-box {
+    max-width: 400px;
+    width: 100%;
+    height: 50px;
+    background-color: #2a3132;
+    border: 1px solid #F5F0F650;
+    border-radius: 25px;
+}
+
+.hero__cta-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta-btns {
+    margin: 20px auto;
+    background-color: #FFCA3A;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    width: 150px;
+    border-radius: 10px;
+    color: #1b2021;
+}
+
+.cta-btns:hover {
+    background-color: #2e363750;
+    border: 1px solid #F5F0F650;
+    color: #F5F0F6;
+}
+.cta-btns-alt {
+    margin: 20px auto;
+    background-color: #F5F0F6;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    width: 150px;
+    border-radius: 10px;
+    color: #1b2021;
+}
+
+.cta-btns-alt:hover {
+    background-color: #2e363750;
+    border: 1px solid #F5F0F650;
+    color: #F5F0F6;
+}
+
+.special-char {
+    color: #FFCA3A;
+}
+
+.language__btn  {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #F5F0F6;
+    text-decoration: none;
+}
+
+#language__english, #language__japanese {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.active-language {
+    color: #FFCA3A;
+    font-weight: 500;
+}
+
