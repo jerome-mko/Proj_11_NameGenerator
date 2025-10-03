@@ -38,12 +38,12 @@ let jpGirlsName = [
   "みどり (Midori)", "ゆい (Yui)", "りえ (Rie)", "りり (Riri)", "ゆうな (Yuina)"
 ];
 
-let enBoyCheckboxEl = document.getElementById("boy-checkbox-el");
-let enGirlCheckboxEl = document.getElementById("girl-checkbox-el");
+const enBoyCheckboxEl = document.getElementById("boy-checkbox-el");
+const enGirlCheckboxEl = document.getElementById("girl-checkbox-el");
 let generateNameEl = document.getElementById("generate-el");
 let nameEl = document.getElementById("name-el");
-let japaneseLanguageEl = document.getElementById("language__japanese");
-let englishLanguageEl = document.getElementById("language__english");
+const japaneseLanguageEl = document.getElementById("language__japanese");
+const englishLanguageEl = document.getElementById("language__english");
 let HeadingEl = document.getElementById("hero-heading-el");
 let subheadingEl = document.getElementById("hero-subheading-el");
 let labelBoyEl = document.getElementById("label-boys-el");
@@ -144,9 +144,7 @@ function enRenderName(){
     generateEnName()
 }
 
-function setupCopyButton(){
-    let copyEl = document.getElementById("copy-el");
-
+function setupCopyButton(copyEL){
     copyEl.addEventListener("click", function(){
         navigator.clipboard.writeText(nameEl.textContent)
             .then(() => {

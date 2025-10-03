@@ -137,22 +137,6 @@ p {
    left: 70%;
 }
 
-/* .custom__checkbox {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #18343f40;
-    border: 1px solid #F5F0F6;
-    display: inline-block;
-    vertical-align: middle;
-    flex-direction: row;
-    margin-left: 5px;
-    flex-direction: row;
-    position: relative;
-    cursor: pointer;
-    transition: all 0.2s;
-} */
-
 .hero__name-box {
     max-width: 400px;
     width: 100%;
